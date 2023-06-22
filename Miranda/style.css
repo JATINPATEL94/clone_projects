@@ -1,0 +1,202 @@
+/* default */
+@font-face{
+    font-family: Domain;
+    src: url(./fonts/DomaineDispCondMedium.ttf);
+    font-family: Canopee;
+    src: url(./fonts/Canopee.ttf);
+    font-family: EditorialNew;
+    src: url(./fonts/EditorialNew-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html , body {
+    height: 100%;
+    width:100%;
+    transition: transform 1.2s ease-out;  
+}
+#page1{
+    height: 100vh;
+    width: 100vw;
+    background-color: hsl(32, 13%, 74%);
+    position: relative;
+    overflow-x: hidden;
+}
+/* navbar section start hear */
+#nav{
+    height: 70px;
+    width: 100%;
+    display: flex;
+    padding: 0 30px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #222222;
+    position: fixed;
+    background-color: hsl(32, 13%,74%);
+}
+#nav img{
+    height: 30px;
+    width: 25%;
+}
+#nav h5{
+    font-size: 15px;
+    font-weight: 100;
+    width: 30%;
+}
+#nav i{
+    width: 30%;
+    text-align: right;
+}
+/* elements section start hear */
+#elements{
+    display: flex;
+    padding-top: 60px;
+}
+#ele1 h4 , #ele3 h4{
+    color: #1d1d18;
+    margin: 20px 0px;
+    font-family: Canopee;
+    font-size: 30px;
+    font-weight: 600;
+}
+#ele1 h4 span , #ele3 h4 span {
+    background: #B84118;
+    color: #C6BEB5;
+    font-size: 1.2vw;
+    font-weight: 400;
+    padding: 3px;
+    border-radius: 10%;
+}
+#ele1 , #ele3{
+    width: 33.33%;
+    margin: 40px 70px;
+    font-size: large;
+    font-size: 23px;
+    font-weight: 500;
+}
+#ele2{
+    width: 33.33%;
+    margin: 40px 10px;
+    text-align: center;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+}
+#ele2 h2{
+    color: #1d1d18;
+    padding-top: 3px;
+    font-size: 80px;
+    font-family: Canopee;
+    font-weight: 500;
+    letter-spacing: -3px;
+}
+#ele2 h3{
+    margin-top: 10px;
+    font-size: 45px;
+    font-weight: 200;
+}
+#ele2 h6{
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: 700;
+}
+#ele2 h6 span{
+    margin-top: 30px;
+    font-size: 23px;
+    font-weight: 500;
+}
+#ele1 p , #ele2 , #ele3 p{
+    font-family: EditorialNew
+}
+#img-div{
+    height: 210px;
+    overflow: hidden;
+    border-radius: 3PX;
+}
+#img-div img{
+    width: 100%;
+    transition: all ease 0.45s;
+    object-fit: cover;
+}
+#img-div:hover img{
+    scale: 1.2;
+}
+/* miranda section start hear */
+#page1 h1{
+    font-size: 700px;
+    font-family: Canopee;
+    font-weight: 400;
+    letter-spacing: -35px;
+    background-color: #1C1C1A;
+    color: #C5BEB4;
+    padding-left: 20px;
+    line-height: 600px;
+    margin: 40px;
+}
+/* section-2 start hear */
+#section2 {
+    display: flex;
+}
+#box1{
+    margin: 40px;
+    width: 650px;
+    margin-top: 50px;
+}
+#box1 h2{
+    font-family: canopee;
+    font-size: 167px;
+    color: #1C1C19;
+    text-align: center;
+    font-weight: 400;
+    letter-spacing: -15px;
+    line-height: 150px;
+}
+#box1 h2 span{
+    font-size: 210px;
+    font-weight: 700;
+    color: #1C1C19;
+    letter-spacing: normal;    
+}
+#box1 img{
+    width:105%;
+    margin-left: 5px;
+    margin-top: 20px;
+}
+#box1 h5::first-letter{
+    
+    font-size: 90px;
+    font-weight: 700;
+    background-color: #1d1d1b;
+    color: #CDC6BE;
+    font-family: Canopee;
+    font-feature-settings: "ss03";
+    float: left;
+    margin-right: 15px;
+    margin-top: 15px;
+    padding:  10px;    
+}
+#box1 h5 {
+    font-family: EditorialNew;
+    font-size: 42px;
+    font-weight: normal;
+    margin-top: 20px;
+    width: 600px;
+}
+#box2{
+    margin: 40px;
+    border-left: 1px solid black;
+}
+#box2 img{
+    margin-left: 40px;
+    width: 97%;
+    height: 55%;
+}
+#box2 h2{
+    font-family: canopee;
+    font-size: 130px;
+    font-weight: 600;
+    margin: 50px;
+    letter-spacing: -3px;
+}
+/* section-3 start hear */
