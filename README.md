@@ -32,8 +32,10 @@ To run this website locally, follow these steps:
 
 Contributions are not currently being accepted for this project as it is a personal portfolio. However, feedback and suggestions are always welcome!
 
+🌐 Visit original portfolio website: https://www.niccolomiranda.com/
+
 ## Contact Me 📧
 
 If you would like to get in touch, please feel free to reach out to me at pateljatinpc@gmail.com 
 
-🌐 Visit original portfolio website: https://www.niccolomiranda.com/
+
