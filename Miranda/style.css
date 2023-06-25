@@ -15,14 +15,7 @@
 html , body {
     height: 100%;
     width:100%;
-    transition: transform 1.2s ease-out;  
-}
-#page1{
-    height: 100vh;
-    width: 100vw;
-    background-color: hsl(32, 13%, 74%);
-    position: relative;
-    overflow-x: hidden;
+    transition: transform 1.2s ease-out 1S;  
 }
 /* navbar section start hear */
 #nav{
@@ -49,8 +42,13 @@ html , body {
     width: 30%;
     text-align: right;
 }
-/* elements section start hear */
-#elements{
+/* page1 start hear */
+#page1{
+    background-color: hsl(32, 13%, 74%);
+    overflow-x: hidden;
+}
+/* section1 start hear */
+#section1 {
     display: flex;
     padding-top: 60px;
 }
@@ -349,19 +347,84 @@ html , body {
     margin-top: 50px;
 }
 #allwork{
-    background-color: #CAC1B7;
+    background-color: #CAC1B6;
     margin-top : 20px;
     width: 95%;
     height: 20%;
     border-radius: 150%;
     border: 1px solid black;
     text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
 }
 #allwork h3{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
     font-family: Canopee;
-    font-size: 115px;
+    font-size: 100px;
     letter-spacing: -3px;
-    font-weight: 600;  
-    margin-top: 55PX;  
+    font-weight: 600; 
+    transform: translateX(-70px);
+    transition: all ease 0.6s;
 }
-/* section5 start hear */
+#allwork img{
+    height: 60px;
+    transition: all ease 0.6s;
+    width: 290px;
+    transform: translateX(-300px);
+}
+#allwork:hover h3 {
+    transform: translateX(450px);
+}
+#allwork:hover img {
+    transform: translateX(180px);
+}
+/* page2 start hear */
+#page2{
+    background-color: hsl(32, 13%, 74%);
+    overflow-x: hidden;
+}
+/* container-1 satrt hear */
+#container-1{
+    width: 96%;
+    height: 260px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin: 35px;
+    display: flex;
+}
+.awards{
+    width: 25%;
+    height: 100%;
+    display: flex;
+}
+.Titel{
+    text-align: center;
+    margin-top: 50px;
+}
+.awards h1{
+    font-family: Canopee;
+    font-size: 211px;
+    margin: 10px;
+    font-weight: 100;
+    color: #1C1C19;
+}
+.awards h2{
+    font-family: Canopee;
+    font-size: 93px;
+    font-weight: 500;
+    letter-spacing: -5px;
+    color: #1C1C19;
+}
+.awards h3{
+    font-family: EditorialNew;
+    font-size: 35px;
+    font-weight: 100;
+    letter-spacing: -1px;
+}
+/* container-2 satet hear  */
