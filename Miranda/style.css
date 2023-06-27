@@ -17,16 +17,19 @@ html , body {
     width:100%;
     transition: transform 1.2s ease-out 1S;  
 }
+#main{
+    background-color: #222;
+    overflow-x: hidden;
+}
 /* navbar section start hear */
 #nav{
-    height: 70px;
+    height: 100px;
     width: 100%;
     display: flex;
     padding: 0 30px;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #222222;
-    position: fixed;
+    border-bottom: 1px solid #716E68;
     background-color: hsl(32, 13%,74%);
 }
 #nav img{
@@ -49,8 +52,8 @@ html , body {
 }
 /* section1 start hear */
 #section1 {
+    border-top:1px solid #908B84;
     display: flex;
-    padding-top: 60px;
 }
 #ele1 h4 , #ele3 h4{
     color: #1d1d18;
@@ -131,7 +134,7 @@ html , body {
     color: #C5BEB4;
     padding-left: 20px;
     line-height: 600px;
-    margin: 40px;
+    margin: 35px;
 }
 /* section-2 start hear */
 #section2 {
@@ -389,7 +392,7 @@ html , body {
     background-color: hsl(32, 13%, 74%);
     overflow-x: hidden;
 }
-/* container-1 satrt hear */
+/* container-1 start hear */
 #container-1{
     width: 96%;
     height: 260px;
@@ -427,4 +430,170 @@ html , body {
     font-weight: 100;
     letter-spacing: -1px;
 }
-/* container-2 satet hear  */
+/* container-2 start hear  */
+#container-2{
+    display: flex;
+    width: 96%;
+    margin: 35px;
+    margin-top: 100px;
+}
+#container-2-left{
+    width: 59%;
+    overflow: hidden;
+}
+#con-2-left-up{
+    width: 95%;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 25px;
+}
+#container-2-left img{
+    width: 268px;
+    height: 430px;
+}
+#container-2-right img{
+    width: 900px;
+    height: 892px;
+}
+/* container-3 start hear  */
+.headline{
+    font-family: Canopee;
+    font-size: 595px;
+    font-weight: 500;
+    letter-spacing: -30px;
+    line-height: 445px;
+    color: #1C1C19;
+    margin-left: 5px;
+}
+.headline span{
+    display: inline-block;
+    transform: scaleX(0.6);
+    font-family: Domain;
+    letter-spacing: -130px;
+    margin-left: -50px;
+    font-weight: 700;
+}
+#container-3{
+    display: flex;
+    margin-left: 40px;
+    overflow: hidden;
+}
+#container-3 img{
+    width: 500px;
+    height: 430px;
+}
+/* container-4 start hear  */
+#container-4{
+    display: flex;
+    overflow: hidden;
+    margin-left: 35px; 
+    height: 428px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 60px; 
+}
+#con-4-left{
+    background-color: #262623;
+    margin-top: 30px;
+    width: 61%;
+    padding: 15px;
+}
+#con-4-left h1{
+    font-family: Canopee;
+    font-size: 487px;
+    font-weight: 100;
+    letter-spacing: -20px;
+    color: #BDB5AC;
+}
+#con-4-right{
+    height: 100%;
+    width: 35%;
+    padding: 0px 40px;
+}
+#con-4-right h6{
+    font-family: EditorialNew;
+    font-size: 40px;
+    font-weight: 100;
+    color: #403F3B;
+}
+#con-4-right h4{
+    font-family: Canopee;
+    font-size: 149px;
+    font-weight: 100;
+    letter-spacing: -5px;
+    line-height: 140px;
+}
+/* container-5 start hear  */
+#container-5{
+    width: 96%;
+    margin: 0 35px;
+    padding: 40px 0px;
+    white-space: nowrap;
+    overflow-y: hidden;
+    overflow-x: auto;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+ }
+ #container-5::-webkit-scrollbar{
+    display: none;
+ }
+#container-5 h1{
+    font-family: EditorialNew;
+    font-size: 115px;
+    font-weight: 100;
+    letter-spacing: -5px;
+    display: flex;
+    align-items: center;
+    display: inline-block;
+    margin-right: 50px;
+    animation-name: scroll;
+    animation-duration: 4s;
+     animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+#container-5 h1 span {
+    font-family: Canopee;
+    color: #C4BCB3;
+    background-color: #1C1C1A;
+    padding: 0px 10px;
+}
+@keyframes scroll{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 54px));
+    }
+}
+#container-5:hover h1 {
+    animation-play-state: paused;
+}
+/* container-6 start hear  */
+#container-6{
+    height: 100px;
+    display: flex;
+}
+#container-6 h1{
+    width: 78%;
+    font-family: Canopee;
+    margin-top: 30px;
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight: 100;
+}
+#container-6 a{
+    text-decoration: none;
+    font-family: Canopee;
+    margin-top: 40px;
+    padding-right: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    color: #706B66;
+}
+#container-6 i{
+    padding: 10px;
+    font-size: 30px;
+    margin-top: 35px;
+    padding: 1px;
+}
+/* completed Clone Project  */
