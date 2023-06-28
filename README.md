@@ -1,17 +1,6 @@
-# Miranda clone_projects started on 22-06-23=======
-# clone- Miranda Paper Portfolio 📄
 
-Welcome to my Miranda Paper Portfolio website! This is a digital representation of my portfolio that showcases my skills and projects.
-
-## Description 📝
-
-Miranda Paper Portfolio is a sleek and elegant website designed to display my portfolio in a clean and organized manner. It highlights my work, skills, and achievements in the field.
-
-## Features ✨
-
-- Minimalistic and professional design 🖌️✨
-- Easy navigation and intuitive user interface 🚀🌐
-- Sections for showcasing projects, skills, and contact information 📂🔍📧
+# clone- Miranda Paper Portfolio 📄 start on 22-06-23
+🌐 Visit original portfolio website: https://www.niccolomiranda.com/
 
 ## Technologies Used 💻
 
@@ -32,8 +21,6 @@ To run this website locally, follow these steps:
 ## Contributing 🤝
 
 Contributions are not currently being accepted for this project as it is a personal portfolio. However, feedback and suggestions are always welcome!
-
-🌐 Visit original portfolio website: https://www.niccolomiranda.com/
 
 ## Contact Me 📧
 
