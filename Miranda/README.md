@@ -1,4 +1,4 @@
-# Miranda clone_projects started on 22-06-23=======
+
 # clone- Miranda Paper Portfolio 📄
 
 Welcome to my Miranda Paper Portfolio website! This is a digital representation of my portfolio that showcases my skills and projects.
