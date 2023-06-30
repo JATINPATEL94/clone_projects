@@ -27,5 +27,5 @@ Contributions are not currently being accepted for this project as it is a perso
 ## Contact Me 📧
 
 If you would like to get in touch, please feel free to reach out to me at  pateljatinpc@gmail.com 
-<br>[![Instagram](https://img.shields.io/badge/Instagram-%40JATIN_PATEL_94-orange)](https://www.instagram.com/JATIN-PATEL-94/)
+<br>[![Instagram](https://img.shields.io/badge/Instagram-%40JATIN_PATEL_94-orange)](https://www.instagram.com/jatin_patel_94/)
 <br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-JATINPATEL-blue)](https://www.linkedin.com/in/jatin-patel-098067271/)
