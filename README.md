@@ -1,6 +1,7 @@
 My Projects
 
 ## clone- Miranda Paper Portfolio 📄 start on 22-06-23
+🌐 Visit clone  portfolio website: https://jatin-miranda-clone.netlify.app/ <br>
 🌐 Visit original portfolio website: https://www.niccolomiranda.com/
 
 ## Technologies Used 💻
@@ -8,7 +9,7 @@ My Projects
 This website is built using the following technologies:
 
 - HTML5
-- CSS3
+- CSS
 - JavaScript
 
 ## Installation and Usage 🚀
@@ -25,5 +26,6 @@ Contributions are not currently being accepted for this project as it is a perso
 
 ## Contact Me 📧
 
-If you would like to get in touch, please feel free to reach out to me at pateljatinpc@gmail.com 
-
+If you would like to get in touch, please feel free to reach out to me at  pateljatinpc@gmail.com 
+<br>[![Instagram](https://img.shields.io/badge/Instagram-%40JATIN_PATEL_94-orange)](https://www.instagram.com/JATIN-PATEL-94/)
+<br>[![LinkedIn](https://img.shields.io/badge/LinkedIn-JATINPATEL-blue)](https://www.linkedin.com/in/jatin-patel-098067271/)
