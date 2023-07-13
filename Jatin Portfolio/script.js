@@ -7,7 +7,7 @@ const navbar = document.querySelector(".navbar");
 
 mobileNavbar.addEventListener("click", () => {
   navbar.classList.toggle("active");
-  mobileNavbar.classList.toggle("active");
+  mobileNavbar.classList.toggle("nav-activ-btn");
 });
 
 /* ==================================================
