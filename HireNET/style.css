@@ -13,7 +13,6 @@
 
 :root {
     --bg: #6bcfc3;
-    /* --bg: #49c5b6; */
     --bg-main: #ffffff;
     --bg-helper: #942e61;
     --heading: rgb(0, 0, 0);
@@ -241,9 +240,9 @@ button {
 .box-top {
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    padding-bottom: 1rem;
+    justify-content: space-between;
     border-bottom: 1px solid black;
+    padding: 1rem 3rem;
 }
 
 .profile-image {
