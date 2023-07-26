@@ -18,6 +18,9 @@
                 <li><a href="#Services" class="navbar-link About">About</a></li>
                 <li><a href="#Services" class="navbar-link Services">Services</a></li>
                 <li><a href="#Contact" class="navbar-link Contact">Contact</a></li>
+                <li id="userLinkContainer" data-isLoggedIn="<?php echo $loggedIn ? 'true' : 'false'; ?>" data-username="<?php echo $username; ?>">
+                  <a href="#" class="navbar-link login" id="loginLink">Login</a>
+              </li>
             </ul>           
         </nav>
 </header> 
