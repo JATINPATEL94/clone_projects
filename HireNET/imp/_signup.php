@@ -8,39 +8,41 @@ echo '<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bo
 
 include '_dbconnect.php';
 
-$username = $_POST['name'];
+$username = $_POST['username']; // not name it a username
 $email = $_POST['email'];
 $password = $_POST['password'];
-$cpassword = $_POST['cpassword'];
+$cpassword = $_POST['confirm_password']; // Correct the field name for confirm_password
 $country = $_POST['country'];
-$number = $_POST['number'];
+$number = $_POST['phone_number']; // Correct the field name for phone_number
 $gender = $_POST['gender'];
 $skills = $_POST['skills'];
-$industries = $_POST['industries'];
-$sql = "SELECT * FROM `users` WHERE username='$username' and email='$email'";
+$industry = $_POST['industry']; // Correct the field name for industry
+
+$sql = "SELECT * FROM `users` WHERE username='$username' OR email='$email'";
 $result = mysqli_query($conn, $sql);
 $num_rows = mysqli_num_rows($result);
+
 if ($num_rows == 0) {
-    if(($password == $cpassword)){
+    if ($password == $cpassword){ 
         $hash = password_hash($password, PASSWORD_DEFAULT);
-        $sql = "INSERT INTO `users`(`name`, `email`, `password`, `country`, `number`, `gender`, `skills`, `industries`, `dateTime`) VALUES ($username,$email,$hash,$country,$number,$gender,$skills,$industries,current_timestamp()";
+        $sql = "INSERT INTO `users`(`name`, `email`, `password`, `country`, `number`, `gender`, `skills`, `industries`, `dateTime`)
+        VALUES ('$username', '$email', '$hash', '$country', '$number', '$gender', '$skills', '$industry', current_timestamp())"; // Add the closing parenthesis here
         $result = mysqli_query($conn, $sql);
-        if ($result){
+
+        if ($result) {
             echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
             <strong>Congrats! </strong> You account is created successfully. Go and <a href="https://hirenet.orgfree.com/login.html">Login</a> now.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
           </div>';
-            header("location: https://hirenet.orgfree.com/login.html");
+            header("location: https://hirenet.orgfree.com/_login.html");
         }
-    }
-    else{
+    }else{
         echo '<div class="alert alert-warning alert-dismissible fade show" role="alert">
         <strong>Error! </strong> Passwords do not match.
         <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
       </div>';
     }
-}
-else{
+}else{
     echo "<script>
     alert('The Username or E-mail is already in use. Try again with another Username.');
     </script>";
