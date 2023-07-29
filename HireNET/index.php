@@ -18,11 +18,11 @@
                 <li><a href="#Services" class="navbar-link About">About</a></li>
                 <li><a href="#Services" class="navbar-link Services">Services</a></li>
                 <li><a href="#Contact" class="navbar-link Contact">Contact</a></li>
-                <!-- <li id="userLinkContainer" data-isLoggedIn="<?php echo $loggedIn ? 'true' : 'false'; ?>" data-username="<?php echo $username; ?>">
-                  <a href="#" class="navbar-link login" id="loginLink">Login</a>
-              </li> -->
-              <li id="login-btn" class="navbar-link login"><a href="login.html">Login</a></li>
-            </ul>           
+                <!-- <li><a href="login.html" class="navbar-link login" id="loginLink">Login</a></li> -->
+                <li id="login-btn" class="navbar-link login">
+                <a href="#" id="loginLink">Login</a>
+                </li>
+            </ul>          
         </nav>
 </header> 
 <main>
@@ -243,27 +243,27 @@
               <ul>
                 <li>
                   <i class="ri-corner-down-right-line"></i>
-                  <a href="#Navbar">Home</a> 
+                  <a href="#Navbar">Home</a>
                 </li>
                 <li>
                   <i class="ri-corner-down-right-line"></i>
-                  <a href="#Jobs">Jobs</a> 
+                  <a href="#Jobs">Jobs</a>
                 </li>
                 <li>
                   <i class="ri-corner-down-right-line"></i>
-                  <a href="#About">About</a> 
+                  <a href="#About">About</a>
                 </li>
                 <li>
                   <i class="ri-corner-down-right-line"></i>
-                  <a href="#Service">Services</a> 
+                  <a href="#Service">Services</a>    
                 </li>
                 <li>
                   <i class="ri-corner-down-right-line"></i>
-                  <a href="#Contact">contact</a> 
+                  <a href="#Contact">contact</a>
                 </li>
               </ul>
             </div>
-    
+
             <div class="f-service">
               <h3>Services</h3>
               <ul>
@@ -306,7 +306,7 @@
         </div>
     </footer>
 </main>
-<?php include 'imp/dbconnect.php';?>
+<?php include 'imp/_dbconnect.php';?>
 <script src="script.js"></script>
 </body>
 </html>
