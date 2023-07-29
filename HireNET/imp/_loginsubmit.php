@@ -1,4 +1,9 @@
+
 <?php
+echo ' 
+<head>
+   <meta http-equiv="refresh" content="0,https://hirenet.orgfree.com/login.html">
+</head>';
 include '_dbconnect.php';
 $login = false;
 
@@ -17,17 +22,16 @@ if ($result && mysqli_num_rows($result) > 0) {
         session_start();
         $_SESSION['loggedin'] = true;
         $_SESSION['username'] = $username;
-        header("location: https://hirenet.orgfree.com");
+        header("location: https://hirenet.orgfree.com"); // Redirect to the main page on successful login
     } else {
         echo "<script>
             alert('Invalid Credentials. We are redirecting you back to the login page.');
-            window.location.href = '_login.html';
-        </script>";
-    }
+            </script>";
+        }
+        // window.location.href = 'https://hirenet.orgfree.com/login.html';
 } else {
     echo "<script>
         alert('Invalid Credentials. We are redirecting you back to the login page.');
-        window.location.href = '_login.html';
     </script>";
 }
 ?>
