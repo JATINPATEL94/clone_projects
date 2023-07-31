@@ -19,7 +19,7 @@
 } */
 
 :root {
-    --bg: #F8F9FAD;
+    --bg: #F8F9FA;
     --bg-helper: #6bcfc3;
     --heading: #12124E;
     --helper-tint: #12124E;
@@ -87,7 +87,7 @@ a {
 
 .grid {
     display: grid;
-    gap: 5rem;
+    gap: 4rem;
 }
 
 .grid-1 {
@@ -244,7 +244,7 @@ button {
     background: var(--bg);
     height: 60rem;
     padding: 2rem;
-    border-radius: 5px;
+    border-radius: 20px;
     overflow: hidden;
 }
 
