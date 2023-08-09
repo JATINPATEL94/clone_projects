@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,7 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
     <header id="Navbar">
         <?php 
@@ -35,7 +33,6 @@
                 $exp = $row['exp'];
                 $jobCount++;
 
-                // echo '<div class="job-box">'. $jobCount . '">';
                 echo '<div class="job-box" data-job-count="' . $jobCount . '">';
                 echo '<div class="box-top">';
                 echo '<div class="profile-image"><img id="profile-pic" src="images/profile image/hiring.jpg" alt="profile image"></div>';
@@ -66,7 +63,6 @@
                 echo '<div class="popup-content">';
                 echo '<span class="close-popup" data-popup-id="' . $jobCount . '">&times;</span>';
                 // Display job details in the popup
-            
                 echo '<div class="job-box">';
                 echo '<div class="box-top">';
                 echo '<div class="profile-image"><img id="profile-pic" src="images/profile image/hiring.jpg" alt="profile image"></div>';
@@ -91,9 +87,8 @@
                 echo '</div>';
                 echo '</div>';
                 echo '</div>';
-
                 echo '<h3>' . $jobTitle . '</h3>';
-                 echo '<p>' . $jobShortdesc . '</p>';
+                echo '<p>' . $jobShortdesc . '</p>';
                 // Other job details Adding Hear...
                 // change $jobShoetDesc into $moreDEtails in bellow code
                 echo '<div><h4>More details : <span id="job-description">' . $jobShortdesc . '</span></h4></div>';
@@ -110,11 +105,10 @@
     </main>
     <footer class="footer-section section" id="Services">
     <?php
-            include 'imp/_footer.php'
-        ?>
+        include 'imp/_footer.php'
+    ?>
     </footer>
     <?php include 'imp/_dbconnect.php';?>
     <script src="script.js"></script>
 </body>
-
 </html>
