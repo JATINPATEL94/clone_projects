@@ -73,45 +73,7 @@
         <section class="jobs-display-section section" id="Jobs">
             <h2 class="common-heading">Some Popular Jobs</h2>
             <div class="jobs-container grid grid-three-column">
-                <!-- job not in database -->
-                <div class="job-box">
-                    <div class="box-top">
-                        <div class="profile-image"><img id="profile-pic" src="images/profile image/tcs.png"
-                                alt="profile image"></div>
-                        <h3 id="company-name">Tata Consultancy Services</h3>
-                    </div>
-                    <div class="box-bottom grid-1 grid-six-rows">
-                        <div>
-                            <h4>job-role : <span id="job-role">Front-end Devloper also backend </span></h4>
-                        </div>
-                        <div class="box-center">
-                            <div>
-                                <h4><i class="ri-map-pin-line"> Location : <span id="location">Gujarat</span></i></h4>
-                            </div>
-                            <div>
-                                <h4>salary : ₹ <span>20,000</span></h4>
-                            </div>
-                        </div>
-                        <div>
-                            <h4>job Description : <span id="job-description">We’re looking for a Front-end developer who
-                                    will take a key role on our team.</span></h4>
-                        </div>
-                        <div>
-                            <h4>Skills : <span id="skills">HTML:5 , CSS , JAVASCRIPT</span></h4>
-                        </div>
-                        <div>
-                            <h4>Tags : <span id="tag">#Fronted_Devloper,#HTML,#JAVASCRPIT</span></h4>
-                        </div>
-                        <div class="appy-report">
-                            <div class="apply">
-                                <h4>Apply!</h4>
-                            </div>
-                            <div class="Report">
-                                <h4>Know more</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                
                 <!-- job from database -->
                 <?php
                 include 'imp/_dbconnect.php';
@@ -132,11 +94,11 @@
                         echo '<div class="job-box">';
                         echo '<div class="box-top">';
                         echo '<div class="profile-image"><img id="profile-pic" src="images/profile image/hiring.jpg" alt="profile image"></div>';
-                        echo '<h3 id="company-name">Hiring</h3>';
+                        echo '<h3 id="company-name">' . $jobTitle . '</h3>';
                         echo '</div>';
                         echo '<div class="box-bottom grid-1 grid-six-rows">';
                         echo '<div>';
-                        echo '<h4>job-role : <span id="job-role">' . $jobTitle . '</span></h4>';
+                        echo '<h4>job-role : <span id="job-role">' . $jobType . '</span></h4>';
                         echo '</div>';
                         echo '<div class="box-center">';
                         echo '<div>';
@@ -148,12 +110,11 @@
                         echo '<div><h4>Exp : <span id="skills">' . $exp . '</span></h4></div>';
                         echo '<div><h4>Tags : <span id="tag">' . $tags . '</span></h4></div>';
                         echo '<div class="select-col appy-report">';
-                        echo '<div class="apply"><h4>Apply!</h4></div>';
-                        echo '<div class="intrested"><h4>Know more</h4></div>';
+                        echo '<button class="apply"><h4><a href="https://hirenet.orgfree.com/jobs.php">Apply!</a></h4></button>';
+                        echo '<button class="more"><h4><a href="https://hirenet.orgfree.com/jobs.php"> Know more</a></h4></button>';
                         echo '</div>';
                         echo '</div>';
                         echo '</div>';
-                        $jobCount++;
                     }
                     echo '</div>';
                 } else {

@@ -23,7 +23,7 @@
     --bg-helper: #6bcfc3;
     --heading: #12124E;
     --helper-tint: #12124E;
- }
+}
 
 html {
     font-size: 62.5%;
@@ -72,6 +72,9 @@ a {
     color: var(--heading);
 }
 
+button {
+    cursor: pointer;
+}
 
 /* ==================================================
 -+-+-+-+-+ pre-defined coad +-+-+-+-+-
@@ -148,6 +151,7 @@ header>img {
 .navbar-list {
     display: flex;
     gap: 4.8rem;
+    list-style: none;
 }
 
 .navbar-link:link,
@@ -160,6 +164,21 @@ header>img {
     text-decoration: none;
     text-transform: uppercase;
     color: var(--heading);
+}
+
+.mobile-navbar-btn {
+    display: none;
+    background: transparent;
+    cursor: pointer;
+    border: none;
+}
+
+.mobile-navbar-icon {
+    font-size: 5rem;
+}
+
+.ri-menu-unfold-line {
+    display: none;
 }
 
 /* ==================================================
@@ -175,11 +194,13 @@ header>img {
 
 .hero-image {
     background: var(--bg-helper);
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .hero-image>img {
-    width: 100%;
-    height: 75vh;
+    width: 90%;
     border-radius: 5px;
 }
 
@@ -187,7 +208,8 @@ header>img {
 -+-+-+-+-+ Filter section start +-+-+-+-+-
 ================================================== */
 .filters-section {
-    height: 20rem;
+    height: 10rem;
+    padding: 0;
 }
 
 .filter {
@@ -252,8 +274,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid black;
-    padding: 1rem 3rem;
+    padding: 1rem 2rem;
 }
 
 .profile-image {
@@ -261,6 +282,7 @@ button {
     width: 10rem;
     height: 10rem;
     overflow: hidden;
+    margin-right: 2rem;
 }
 
 .profile-image>img {
@@ -300,7 +322,7 @@ button {
 
 .section-contact-main {
     background: var(--bg-helper);
-    padding: 2% 10%;
+    padding: 5rem 15rem;
     border-radius: 7px;
 }
 
@@ -346,6 +368,7 @@ button {
     flex-direction: column;
     gap: 1.8rem;
     justify-content: center;
+    list-style: none;
 }
 
 .footer-section>h3,
@@ -361,7 +384,7 @@ a,
 /* ==================================================
   -+-+-+-+-+ Pop-up job Details start +-+-+-+-+-
   ================================================== */
-  .popup {
+.popup {
     display: none;
     position: fixed;
     top: 0;
@@ -382,6 +405,7 @@ a,
     position: relative;
     overflow-y: scroll;
 }
+
 .close-popup {
     position: absolute;
     top: 10px;
@@ -468,6 +492,260 @@ a,
     gap: 1rem;
     padding-right: 10rem;
 }
-.btn-submit{
+
+.btn-submit {
     margin-bottom: 2rem;
 }
+
+
+/* ==================================================
+  -+-+-+-+-+ Responsive design start +-+-+-+-+-
+  ================================================== */
+
+
+@media(max-width:1600px) {
+
+    .grid {
+        gap: 2rem;
+    }
+
+    .jobs-container {
+        padding: 2rem;
+    }
+
+    .section {
+        margin: 2rem;
+    }
+
+    .grid-four-column {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 4rem;
+    }
+
+    .f-about {
+        grid-column: 1 / span 3;
+    }
+
+    .f-about,
+    .f-links,
+    .f-service,
+    .f-address {
+        padding-left: 7rem;
+    }
+}
+
+@media(max-width:1400px) {
+    .grid {
+        gap: 4rem;
+    }
+
+    .jobs-container {
+        padding: 4rem;
+    }
+
+    .section {
+        margin: 3rem;
+    }
+
+    .grid-three-column {
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+}
+
+@media(max-width:1100px) {
+    .grid {
+        gap: 3rem;
+    }
+
+    .jobs-container {
+        padding: 3rem;
+    }
+
+    .section {
+        margin: 2rem;
+    }
+
+    .box-bottom {
+        padding: 1rem 0;
+    }
+
+    .section-contact-main {
+        padding: 4rem 10rem;
+    }
+}
+
+@media(max-width:1000px) {
+    .grid {
+        gap: 4rem;
+    }
+
+    .jobs-container {
+        padding: 7rem;
+    }
+
+    .section {
+        margin: 3rem;
+    }
+
+    .box-bottom {
+        padding: 1.5rem;
+    }
+
+    .job-box {
+        padding: 4rem;
+    }
+
+    .grid-three-column {
+        grid-template-columns: 1fr;
+    }
+
+    .f-about,
+    .f-links,
+    .f-service,
+    .f-address {
+        padding-left: 2rem;
+    }
+
+    .filter {
+        gap: 3rem;
+    }
+
+    .filter>select {
+        font-size: 1rem;
+    }
+
+    .navbar-list {
+        gap: 3rem;
+    }
+
+    .grid-four-column {
+        gap: 2rem;
+    }
+}
+
+@media(max-width:800px) {
+    .grid-four-column {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        gap: 4rem;
+    }
+
+    .f-address {
+        grid-column: 1 / span 2;
+    }
+
+    .f-about {
+        grid-column: 1 / span 2;
+    }
+
+    .section-contact-main {
+        padding: 3rem 5rem;
+    }
+
+    .filter>select {
+        display: none;
+    }
+
+    .navbar-list {
+        gap: 2rem;
+    }
+
+    header {
+        padding: 0 1.8rem;
+    }
+}
+
+@media(max-width:700px) {
+    .jobs-container {
+        padding: 3rem;
+    }
+}
+
+@media(max-width:600px) {
+    html {
+        font-size: 55%;
+    }
+
+    .jobs-container {
+        padding: 2rem;
+    }
+
+    .job-box {
+        padding: 2rem;
+    }
+
+    .mobile-navbar-btn {
+        display: block;
+        z-index: 9999;
+        border: 3px solid var(--heading);
+        color: var(--bg);
+    }
+
+    .navbar {
+        width: -10%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: var(--bg-helper);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 999;
+        transition: all 0.5s linear;
+        opacity: 0;
+        visibility: hidden;
+        pointer-events: none;
+    }
+
+    .navbar-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-link:link,
+    .navbar-link:visited {
+        font-size: 3.2rem;
+        color: black;
+    }
+
+    .active {
+        width: 100%;
+        opacity: 1;
+        visibility: visible;
+        pointer-events: all;
+    }
+
+    .nav-activ-btn>.ri-menu-3-line {
+        display: none;
+    }
+
+    .nav-activ-btn>.ri-menu-unfold-line {
+        display: block;
+    }
+}
+
+@media(max-width:500px) {
+    .common-heading {
+        font-size: 2rem;
+        letter-spacing: 2px;
+        padding: 0 2rem;
+    }
+
+    .section {
+        margin: 2rem;
+    }
+
+    .job-box {
+        padding: 0;
+    }
+}
+
+@media(max-width:450px) {
+    html {
+        font-size: 48%;
+    }
+}
+
