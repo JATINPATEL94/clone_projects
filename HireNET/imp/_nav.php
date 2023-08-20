@@ -1,7 +1,7 @@
 <?php
 session_start();
 ?>
-<img src="images/logo.webp" alt="logo">
+<a href="https://hirenet.orgfree.com/"><img src="images/logo.webp" alt="logo"></a>
 <nav class="navbar">
     <ul class="navbar-list">
         <li><a href="/index.php" class="navbar-link Home">Home</a></li>

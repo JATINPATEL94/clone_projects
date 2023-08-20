@@ -11,11 +11,11 @@ echo '<div class="grid-2 grid-four-column">
     <ul>
         <li>
             <i class="ri-corner-down-right-line"></i>
-            <a href="#Navbar">Home</a>
+            <a href="https://hirenet.orgfree.com/index.php#Navbar">Home</a>
         </li>
         <li>
             <i class="ri-corner-down-right-line"></i>
-            <a href="#Jobs">Jobs</a>
+            <a href="https://hirenet.orgfree.com/jobs.php#Jobs">Jobs</a>
         </li>
         <li>
             <i class="ri-corner-down-right-line"></i>
@@ -23,11 +23,7 @@ echo '<div class="grid-2 grid-four-column">
         </li>
         <li>
             <i class="ri-corner-down-right-line"></i>
-            <a href="#Service">Services</a>
-        </li>
-        <li>
-            <i class="ri-corner-down-right-line"></i>
-            <a href="#Contact">contact</a>
+            <a href="https://hirenet.orgfree.com/jobs.php#Contact">contact</a>
         </li>
     </ul>
 </div>
