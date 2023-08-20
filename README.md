@@ -1,9 +1,12 @@
 My Projects
 
-## My Portfolio 📄 start on 08-07-23
+## HireNET - A Job Portals Sites 📄 completed on 22-08-23
+🌐 Visit HireNET Website: https://hirenet.orgfree.com/ 
+
+## My Portfolio 📄 completed on 08-07-23
 🌐 Visit my portfolio website: https://jatinpatel.netlify.app/
 
-## clone- Miranda Paper Portfolio 📄 start on 22-06-23
+## clone- Miranda Paper Portfolio 📄 completed on 22-06-23
 🌐 Visit clone  portfolio website: https://jatin-miranda-clone.netlify.app/ <br>
 🌐 Visit original portfolio website: https://www.niccolomiranda.com/
 
@@ -14,6 +17,7 @@ This website is built using the following technologies:
 - HTML5
 - CSS
 - JavaScript
+- PHP
 
 ## Installation and Usage 🚀
 
