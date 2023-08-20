@@ -37,7 +37,7 @@
 
                 echo '<div class="job-box" data-job-count="' . $jobCount . '">';
                 echo '<div class="box-top">';
-                echo '<div class="profile-image"><img id="profile-pic" src="images/profile image/hiring.jpg" alt="profile image"></div>';
+                echo '<div class="profile-image"><img id="profile-pic" src="images/profile image/hiring.webp" alt="profile image"></div>';
                 echo '<h3 id="company-name">' . $jobTitle . '</h3>';
                 echo '</div>';
                 echo '<div class="box-bottom grid-1 grid-six-rows">';

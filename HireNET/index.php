@@ -93,7 +93,7 @@
                         $exp = $row['exp'];
                         echo '<div class="job-box">';
                         echo '<div class="box-top">';
-                        echo '<div class="profile-image"><img id="profile-pic" src="images/profile image/hiring.jpg" alt="profile image"></div>';
+                        echo '<div class="profile-image"><img id="profile-pic" src="images/profile image/hiring.webp" alt="profile image"></div>';
                         echo '<h3 id="company-name">' . $jobTitle . '</h3>';
                         echo '</div>';
                         echo '<div class="box-bottom grid-1 grid-six-rows">';
@@ -165,6 +165,6 @@
         ?>
     </footer>
     <?php include 'imp/_dbconnect.php';?>
-    <script src="script.js"></script>
+    <script src="js/script.js"></script>
 </body>
-</html>
+</html
