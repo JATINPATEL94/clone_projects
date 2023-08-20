@@ -1,10 +1,13 @@
 
 # clone- Miranda Paper Portfolio 📄
+
 🌐 Visit Miranda portfolio clone website: https://jatin-miranda-clone.netlify.app/
+
 🌐 Visit original portfolio website: https://www.niccolomiranda.com/
-Welcome to my Miranda Paper Portfolio website! This is a digital representation of my portfolio that showcases my skills and projects.
 
 ## Description 📝
+
+Welcome to my Miranda Paper Portfolio website! This is a digital representation of my portfolio that showcases my skills and projects.
 
 Miranda Paper Portfolio is a sleek and elegant website designed to display my portfolio in a clean and organized manner. It highlights my work, skills, and achievements in the field.
 
