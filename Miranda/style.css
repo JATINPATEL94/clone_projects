@@ -1,7 +1,7 @@
 /* default */
 @font-face{
     font-family: Domain;
-    src: url(./fonts/DomaineDispCondMedium.ttf);
+    src: url(.fonts/DomaineDispCondMedium.ttf);
     font-family: Canopee;
     src: url(./fonts/Canopee.ttf);
     font-family: EditorialNew;
