@@ -144,7 +144,8 @@ header {
     border-bottom: 2px solid black;
 }
 
-header>a, header>a>img {
+header>a,
+header>a>img {
     height: 100%;
 }
 
@@ -212,7 +213,7 @@ header>a, header>a>img {
     padding: 0;
 }
 
-.filter {
+.filters {
     background: var(--bg-helper);
     height: 100%;
     gap: 5rem;
@@ -222,7 +223,15 @@ header>a, header>a>img {
     border-radius: 7px;
 }
 
-.filter>select {
+.filters>form {
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.filters select,
+.filters input {
     padding: .7rem 1rem;
     font-size: 1.5rem;
     font-weight: 700;
@@ -232,7 +241,7 @@ header>a, header>a>img {
     cursor: pointer;
 }
 
-.filter>select>option {
+.filters select option {
     background: var(--bg);
     font-weight: 500;
 }
@@ -726,7 +735,7 @@ a,
         display: block;
     }
 
-    .popup-content{
+    .popup-content {
         width: 85vw;
         height: 75vh;
     }
@@ -753,4 +762,3 @@ a,
         font-size: 48%;
     }
 }
-
