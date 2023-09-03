@@ -3,10 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> HireNet | Find A Jobs in india</title>
+    
+    <title> HireNet | Find Jobs in india</title>
     <link rel="icon" type="image/png" href="images/logo.webp" />
+    <meta name="description" content="Welcome to jobNest one of the best job board/providing service in India. We offer high quality experience to our customers.">
+    <meta author="Vedansh, Jatin" content="Job Nest Devs">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css" rel="stylesheet" />
     <link rel="stylesheet" href="css/style.css" />
+    <meta name="google-site-verification" content="JpNG03a-Gmz7K9xL0yNaUiHYGsgb37q_jjS6V1Fc0SA" />
 </head>
 <body>
     <header id="Navbar">
@@ -20,7 +24,7 @@
             <div class="hero-image"><img src="images/carousel-img-1.webp" alt="We Are Hireing"></div>
         </section>
         <!-- Filter section start hear -->
-        <section class="filters-section section">
+        <!-- <section class="filters-section section">
             <div class="filter">
 
                 <select id="Skills">
@@ -66,9 +70,9 @@
             </div>
 
             <div id="jobList">
-                <!-- Job listing results will be displayed here -->
+                Job listing results will be displayed here
             </div>
-        </section>
+        </section> -->
         <!-- jobs-display section start hear -->
         <section class="jobs-display-section section" id="Jobs">
             <h2 class="common-heading">Some Popular Jobs</h2>
@@ -127,7 +131,7 @@
         <section class="section-contact section" id="Contact">
             <h2 class="common-heading">Contact</h2>
             <div class="section-contact-main contact-container">
-                <form action="https://formspree.io/f/xeqbqndk" method="POST">
+                <form action="https://formspree.io/f/xrgwqrze" method="POST">
                     <div class="grid grid-tow-column">
                         <div>
                             <label for="username"></label>
