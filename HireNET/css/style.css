@@ -209,13 +209,12 @@ header>a>img {
 -+-+-+-+-+ Filter section start +-+-+-+-+-
 ================================================== */
 .filters-section {
-    height: 10rem;
-    padding: 0;
+    /* padding: 0; */
 }
 
 .filters {
     background: var(--bg-helper);
-    height: 100%;
+    padding: 3rem 0;
     gap: 5rem;
     display: flex;
     justify-content: center;
@@ -561,6 +560,23 @@ a,
         grid-template-columns: repeat(2, 2fr);
     }
 
+    .filters form {
+        gap: 1rem;
+    }
+
+}
+
+@media(max-width:1200px) {
+    .filters form {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .btn-apply {
+        grid-column: 4/ span 1;
+        grid-row: 1 /span 2;
+    }
 }
 
 @media(max-width:1100px) {
@@ -653,10 +669,6 @@ a,
         padding: 3rem 5rem;
     }
 
-    .filter>select {
-        display: none;
-    }
-
     .navbar-list {
         gap: 2rem;
     }
@@ -664,6 +676,12 @@ a,
     header {
         padding: 0 1.8rem;
     }
+
+    .filters select,
+    .filters input {
+        font-size: 1rem;
+    }
+
 }
 
 @media(max-width:700px) {
@@ -738,6 +756,16 @@ a,
     .popup-content {
         width: 85vw;
         height: 75vh;
+    }
+
+    .filters form {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .btn-apply {
+        grid-column: 3/ span 1;
+        grid-row: 1 /span 3;
     }
 }
 

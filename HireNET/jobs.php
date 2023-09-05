@@ -86,7 +86,7 @@
                         ?>
                     </select>
 
-                    <input type="submit" value="Apply Filters">
+                    <input class="btn-apply" type="submit" value="Apply Filters">
                 </form>
             </div>
         </section>
